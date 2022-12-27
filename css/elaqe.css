@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+.container {
+    max-width: 1440px !important;
+    margin: 0 auto;
+    border: 1px solid #eee;
+}
+
+header {
+    position: relative;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+}
+
+nav div {
+    width: 80px;
+    height: 70px;
+    background: #017c66;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+nav div:nth-of-type(3) {
+    border: none;
+}
+
+
+
+
+/* ! ============================== SECTION =========================== */
+
+.location-section {
+    width: 57rem;
+    height: 57rem;
+    position: relative;
+    margin: auto;
+}
+
+.map {
+    width: 57rem;
+    height: 57rem;
+}
+
+.company-info {
+    position: absolute;
+    width: 369px;
+    height: 306px;
+    right: 27px!important;
+    top: 27px;
+    background: #2b2b2b;
+    opacity: 80%;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    padding: 47px 47px 47px 77px;
+}
+
+.company-info div>p {
+    font-style: normal;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 27px;
+    color: #ffffff;
+}
+
+.company-info>div>img {
+    margin-right: 10px;
+}
+
+.company-info div {
+    display: flex;
+    align-items: flex-start;
+    width: 221px;
+    height: 81px;
+}
+
+.company-info> :nth-child(2) {
+    margin-top: 25px;
+}
+
+@media only screen and (min-width: 812px) and (max-width: 1024px) {
+    /* tablet */
+    .location-section h1 {
+        font-size: 2rem;
+        line-height: 3rem;
+        margin-left: 200px;
+    }
+}
+
+@media only screen and (max-width: 812px) {
+    /* mobile */
+    .location-section{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .location-section iframe{
+        width: 100%;
+    }
+    .location-section h1 {
+        font-size: 1.7rem;
+        line-height: 2rem;
+        margin-left: 170px;
+    }
+    
+}
+@media only screen and (max-width:450px) {
+    .location-section{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .company-info{
+        width: 90%;
+        padding: 30px;
+        font-size: .9rem;
+    }
+}
+

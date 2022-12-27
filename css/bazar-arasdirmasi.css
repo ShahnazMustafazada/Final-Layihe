@@ -1,0 +1,108 @@
+main {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bazar-arasdirmasi {
+  width: 1000px;
+}
+.bazar-arasdirmasi h1 {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 52px;
+  color: #017c66;
+  margin-top: 59px;
+}
+.bazar-arasdirmasi h2 {
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 52px;
+  color: #2b2b2b;
+  width: 868px;
+  margin: 59px 0 49px;
+}
+.bazar-arasdirmasi > p {
+  font-size: 18px;
+  line-height: 27px;
+  color: #2b2b2b;
+  width: 889px;
+  margin-bottom: 49px;
+}
+.bazarContainer{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.bazar{
+    display: flex;
+    align-items: center;
+    height: 200px;
+    width: 430px;
+    border-bottom: 1px solid rgba(43, 43, 43, 0.25);
+}
+/* .bazar > p{
+    margin-left: 55px;
+} */
+.img-con{
+    width: 190px;
+}
+@media only screen and (max-width: 1024px) {
+    .bazar-arasdirmasi{
+        width: 100%;
+        padding: 1rem;
+    }
+    .bazar-arasdirmasi h1, .bazar-arasdirmasi h2,.bazar-arasdirmasi > p{
+        width: 100%;
+    }
+    
+    .bazar{
+        display: flex;
+        align-items: center;
+        height: 180px;
+        width: 400px;
+        border-bottom: 1px solid rgba(43, 43, 43, 0.25);
+    }
+    .img-con{
+        width: 150px;
+    }
+}
+@media only screen and (max-width: 870px){
+    .bazar-arasdirmasi h1{
+        margin-top: 20px;
+        font-size: 1.8rem;
+    }
+    .bazar-arasdirmasi h2{
+        margin: 25px 0;
+        font-size: 1.5rem;
+    }
+    .bazar-arasdirmasi p{
+        margin-bottom: 20px;
+        font-size: .9rem;
+    }
+    .bazarContainer{
+        display: grid;
+        grid-template-columns: auto;
+        justify-content: center;
+    }
+}
+@media only screen and (max-width: 450px) {
+    .bazar-arasdirmasi h1{
+        margin-top: 10px;
+        font-size: 1.5rem;
+    }
+    .bazar-arasdirmasi h2{
+        margin: 20px 0;
+        font-size: 1rem;
+    }
+    .bazar-arasdirmasi p{
+        margin-bottom: 15px;
+        font-size: .85rem;
+    }
+    .bazar{
+        display: flex;
+        align-items: center;
+        height: 150px;
+        width: 300px;
+        border-bottom: 1px solid rgba(43, 43, 43, 0.25);
+    }
+}

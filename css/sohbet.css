@@ -1,0 +1,71 @@
+
+
+.section-1 h3 {
+  font-size: 23px;
+  padding: 9px;
+}
+
+.section-1-text span {
+  color: #01ab8d;
+}
+
+.section-1-text {
+  display: flex;
+  flex-direction: column;
+  padding: 9px;
+}
+
+.section-2 p {
+  padding-top: 40px;
+  font-size: 18px;
+  padding: 9px;
+}
+
+
+
+
+
+
+
+@media only screen and (min-width: 980px) {
+  .section-1 {
+    margin: auto;
+  }
+
+  .section-1-text {
+    width: 729px;
+    margin: auto;
+    position: relative;
+    right: 124px;
+  }
+
+  .section-1 h3 {
+    font-size: 35px;
+    max-width: 729px;
+    margin: auto;
+    position: relative;
+    right: 124px;
+  }
+
+  .section-2 p {
+    max-width: 976px;
+    margin: auto;
+  }
+
+  .header-text p {
+    font-size: 15px;
+    margin: auto;
+  }
+}
+
+.container {
+  max-width: 1440px;
+  border: 1px solid #eee;
+  margin: auto;
+}
+@media only screen and (max-width: 440px) {
+  .top-nav p{
+    font-size: .8rem !important;
+    line-height: 1rem !important;
+  }
+}

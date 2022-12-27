@@ -1,0 +1,189 @@
+
+.netflix-content{
+    padding: 60px 260px 60px 200px;
+}
+.netflix-content h1{
+    font-size: 2.1875rem;
+    line-height: 3.25rem;
+}
+.netflix-content p{
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    color: #2B2B2B;
+    font-weight: 400;
+    margin: 5px 0;
+    text-align: justify;
+}
+.netflix-content h3{
+    font-size: 1.125rem;
+    line-height: 1.6875rem;
+    color: #2B2B2B;
+    font-weight: 700;
+    margin: 30px 0;
+}
+.netflix-content p:last-child{
+    margin-top: 20px;
+}
+.date-name{
+    margin: 70px 0 ;
+}
+.date{
+    margin: 0!important;
+}
+.name{
+    margin: 0!important;
+    color: #01AB8D!important;
+}
+
+
+
+
+
+
+
+  @media only screen and (min-width: 1024px) and (max-width:1440px){
+    
+     main .about-text-sec{
+        padding: 60px 200px;
+    }
+    .about-text-sec p,a{
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+     }
+     .about-text-sec h2{
+        font-size: 2rem;
+        line-height: 3rem;
+        margin: 50px 0 20px;
+    }
+
+
+    .netflix-content{
+        padding: 50px 150px;
+    }
+    .netflix-content h1{
+        font-size: 2.1rem;
+        line-height: 3.1rem;
+    }
+    .netflix-content p{
+        font-size: 1.1rem;
+        line-height: 1.5rem;
+        color: #2B2B2B;
+        font-weight: 400;
+        margin: 5px 0;
+    }
+    .netflix-content h3{
+        font-size: 1.11rem;
+        line-height: 1.5rem;
+        color: #2B2B2B;
+        font-weight: 700;
+        margin: 30px 0;
+    }
+    .netflix-content p:last-child{
+        margin-top: 20px;
+    }
+    .date-name{
+        margin: 60px 0 ;
+    }
+
+  }
+
+
+
+  @media only screen and (min-width: 812px) and (max-width:1024px){
+    
+     main .about-text-sec{
+        padding: 50px 150px;
+    }
+    .about-text-sec p,a{
+        font-size: 1rem;
+        line-height: 1.5rem;
+     }
+     .about-text-sec h2{
+        font-size: 1.7rem;
+        line-height: 2rem;
+        margin: 40px 0 20px;
+    }
+
+
+
+    .netflix-content{
+        padding: 45px 100px;
+    }
+    .netflix-content h1{
+        font-size: 2rem;
+        line-height: 3rem;
+    }
+    .netflix-content p{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: #2B2B2B;
+        font-weight: 400;
+        margin: 5px 0;
+    }
+    .netflix-content h3{
+        font-size: 1rem;
+        line-height: 1.5rem;
+        color: #2B2B2B;
+        font-weight: 700;
+        margin: 25px 0;
+    }
+    .netflix-content p:last-child{
+        margin-top: 15px;
+    }
+    .date-name{
+        margin: 50px 0 ;
+    }
+
+  }
+
+
+
+
+
+  @media only screen and  (max-width:812px){
+    
+     main .about-text-sec{
+        padding: 30px 80px;
+    }
+    .about-text-sec p,a{
+        font-size: 1rem;
+        line-height: 1.5rem;
+     }
+     .about-text-sec h2{
+        font-size: 1.5rem;
+        line-height: 2rem;
+        margin: 35px 0 20px;
+    }
+
+
+    .netflix-content{
+        padding: 25px 15px;
+    }
+    .netflix-content h1{
+        width: 100%;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+    }
+    .netflix-content p{
+        font-size: 1rem;
+        line-height: 1.3rem;
+        color: #2B2B2B;
+        font-weight: 400;
+        margin: 5px 0;
+    }
+    .netflix-content h3{
+        font-size: 1rem;
+        line-height: 1.3rem;
+        color: #2B2B2B;
+        font-weight: 700;
+        margin: 20px 0;
+    }
+    .netflix-content p:last-child{
+        margin-top: 15px;
+    }
+    .date-name{
+        margin: 40px 0 ;
+    }
+
+
+  }

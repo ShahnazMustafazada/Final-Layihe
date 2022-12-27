@@ -1,0 +1,133 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+h2,
+p {
+  font-weight: 400;
+  font-style: normal;
+  font-size: 18px;
+  line-height: 27px;
+}
+main {
+  padding: 20px 10px 10px 10px;
+}
+/* .header-img{
+  width: 100%!important;
+  height: 544px!important;
+  overflow: hidden!important;
+}
+.header-img video{
+  height: 100%!important;
+  width: 544px!important;
+  transform: rotate(90deg);
+} */
+.first-section > h2 {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 42.5px;
+  color: #017c66;
+}
+.first-section p {
+  padding: 10px 0;
+}
+.second-section h2 {
+  font-style: normal;
+  font-weight: bold;
+  color: #2b2b2b;
+  font-size: 30px;
+  line-height: 42px;
+  padding-bottom: 10px;
+}
+
+.main-group-item {
+  text-align: center;
+}
+.main-group-item img {
+  width: 150px;
+  padding: 10px;
+}
+.main-group-item p {
+  font-size: 30px;
+  line-height: 30px;
+  padding: 10px;
+}
+
+@media only screen and (min-width: 812px) and (max-width: 1024px) {
+  /* tablet */
+  main {
+    display: flex;
+    flex-direction: column;
+  }
+  .main-group-item img {
+    width: auto;
+  }
+  .main-group-item p {
+    font-size: 18px;
+    line-height: 27px;
+    padding: 0px;
+  }
+  .group {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    height: 510px;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  /* Desktop */
+  main {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  section {
+    width: 59.375rem;
+  }
+  .first-section {
+    width: 55.5625rem;
+  }
+  .group {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 930px;
+  }
+  .main-group-item {
+    display: flex;
+    align-items: center;
+    height: 200px;
+    width: 430px;
+    border-bottom: 1px solid rgba(43, 43, 43, 0.25);
+  }
+
+  .main-group-item :nth-child(odd) {
+    margin-right: 30px;
+  }
+  .main-group-item img {
+    width: auto;
+    margin-right: 72px;
+  }
+  .main-group-item p {
+    font-size: 18px;
+    line-height: 27px;
+    padding: 0px;
+  }
+  .icons {
+    width: 160px;
+  }
+  .first-section > h2 {
+    font-size: 35px;
+    line-height: 52.5px;
+  }
+  .second-section h2 {
+    width: 664px;
+    font-size: 35px;
+    line-height: 52px;
+    padding: 59px 0;
+  }
+}

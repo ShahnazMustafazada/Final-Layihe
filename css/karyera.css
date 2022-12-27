@@ -1,0 +1,446 @@
+button {
+  cursor: pointer;
+}
+/* ! ======== POPPUP START =========== */
+
+.karyera-poppup {
+  z-index: 2;
+  background-color: #fff;
+  padding: 50px 70px 20px;
+  width: 70%;
+  max-height: 600px;
+  position: fixed;
+  left: -70%;
+  top: 5%;
+  display: flex;
+  flex-direction: column;
+}
+.overlay2 {
+  z-index: -1;
+  min-width: 100%;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  background: rgba(0, 0, 0, 0.75);
+  transition: all 0.6s 0.5s ease-in;
+}
+.overlay2.active {
+  z-index: 1;
+  opacity: 1;
+  visibility: visible;
+}
+.welcome {
+  animation-name: center;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-delay: 0.5s;
+}
+.back {
+  left: 15%;
+  animation-name: back;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+}
+.goodBye {
+  left: 15%;
+  animation-name: right;
+  animation-duration: 0.6s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: 1;
+  animation-delay: 1s;
+}
+
+@keyframes right {
+  from {
+    left: 15%;
+  }
+  to {
+    left: 170%;
+  }
+}
+@keyframes back {
+  from {
+    left: 15%;
+  }
+  to {
+    left: -70%;
+  }
+}
+@keyframes center {
+  from {
+    left: -70%;
+  }
+  to {
+    left: 15%;
+  }
+}
+.karyera-poppup input {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+.karyera-poppup input,
+.karyera-poppup textarea {
+  width: 100%;
+  padding: 20px 15px;
+  background: #fff;
+  border: 1px solid rgba(43, 43, 43, 0.25);
+  border-radius: 4px;
+  color: rgba(43, 43, 43, 0.25);
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 300;
+  margin-bottom: 5px;
+  outline: none;
+}
+.karyera-poppup .textareaBox {
+  position: relative;
+  box-shadow: (0px 4px 4px rgba(0, 0, 0, 0.25));
+  background-color: #fff;
+  border-radius: 4px;
+  overflow: hidden;
+  border: 1px solid rgba(43, 43, 43, 0.25);
+}
+.karyera-poppup textarea {
+  width: 100%;
+  resize: none;
+  height: 250px;
+  margin: 0;
+  border: none;
+}
+.karyera-poppup .textareaBox .textarea-bottom {
+  display: flex;
+  align-items: center;
+  color: rgba(43, 43, 43, 0.25);
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 300;
+  padding: 5px 10px;
+}
+
+#clipFile {
+  position: absolute;
+  visibility: hidden;
+}
+.btn {
+  position: absolute;
+  right: 15px;
+  bottom: 13px;
+  padding: 8px 30px;
+  background: #2b2b2b80;
+  border: none;
+  outline: none;
+  font-weight: 700;
+  color: #fff;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  border-radius: 4px;
+}
+.btn:hover {
+  cursor: pointer;
+}
+.backBtn {
+  padding-top: 15px;
+}
+.backBtn button {
+  width: 86px;
+  height: 25px;
+  border: 1px solid #01ab8d;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 27px;
+  color: #01ab8d;
+  border-radius: 4px;
+  padding: 3px 7px;
+  display: flex;
+  align-items: center;
+}
+.backBtn button img {
+  margin-right: 4px;
+}
+@media only screen and (max-width: 812px) {
+  .karyera-poppup form input,
+  textarea {
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+    padding: 15px 10px;
+  }
+}
+/* ! ======== POPPUP START =========== */
+@media only screen and (min-width: 320px) {
+  /* and (max-width: 375px) */
+  /* .section-2 {
+          padding-top: 20px;
+          padding-left: 20px;
+          padding-right: 20px;
+      } */
+  .section-2-text {
+    margin: auto;
+    padding: 59px 20px 20px 20px;
+  }
+  .section-2-text span {
+    font-weight: 700;
+  }
+  .section-2 #section-cut {
+    margin-top: 15px;
+  }
+  /* .section-2-main {
+          padding-top: 30px;
+      } */
+  .section-2-main-text {
+    background: #f2f2f280;
+  }
+  .section-2-main-text #welcome {
+    color: #01ab8d;
+    padding: 15px;
+    text-align: center;
+  }
+  .boss {
+    text-align: center;
+  }
+  .boss #name {
+    color: black;
+    font-weight: 400;
+  }
+  .boss #work {
+    color: gray;
+  }
+  .section-2-main-image {
+    background: #f2f2f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 250px;
+  }
+  .section-2-main-image img {
+    width: 200px;
+  }
+  .twc-ready {
+    background: #017c66;
+    width: 100%;
+    height: 236px;
+    color: white;
+    font-size: 35px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+    padding-right: 20px;
+  }
+  .vacancy {
+    width: 100%;
+  }
+  .vacancy #vacancy-text {
+    font-size: 35px;
+    padding: 30px;
+    text-align: center;
+  }
+  .vacancy-section {
+    /* border: 1px solid rgba(43, 43, 43, 0.25); */
+    border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .vacancy-section-head {
+    color: #017c66;
+    font-size: 25px;
+    text-align: center;
+  }
+  .vacancy-section-main {
+    text-align: center;
+    padding-top: 15px;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .apply {
+    width: 158px;
+    height: 54px;
+    border: 1px solid #01ab8d;
+    color: white;
+    font-weight: bold;
+    background: #01ab8d;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 4px;
+    margin-top: 30px;
+    margin-right: 55px;
+  }
+  #vacancy-hr {
+    margin-top: 25px;
+  }
+  .general-appeal {
+    padding-top: 60px;
+  }
+  .main-appeal {
+    background: rgba(43, 43, 43, 0.5);
+    height: 192px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    line-height: 100px;
+  }
+  .main-appeal h3 {
+    color: white;
+    font-size: 25px;
+  }
+  .main-appeal #btnApeal {
+    width: 158px;
+    height: 54px;
+    font-weight: 700;
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    color: #2b2b2b;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  .section-2-text {
+    display: flex;
+  }
+}
+
+@media only screen and (min-width: 425px) {
+  .section-2-main-image img {
+    width: 208px;
+  }
+  .footer-social-media {
+    width: 225px;
+  }
+  .twc-ready {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media only screen and (min-width: 700px) {
+  .section-2-main-image img {
+    width: 208px;
+  }
+  .main-appeal {
+    width: 634px;
+    height: 192px;
+    margin: auto;
+  }
+  .vacancy-section {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border: 1px solid rgba(43, 43, 43, 0.25);
+    /* filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+    border-radius: 4px;
+    /* -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)); */
+  }
+  .vacancy-section-main {
+    width: 600px;
+    height: 205px;
+  }
+  #vacancy-hr {
+    border: 1px solid rgba(255, 255, 255, 0);
+  }
+  .vacancy-section-head p,
+  b {
+    display: flex;
+    line-height: 37px;
+  }
+  .vacancy-section-main p {
+    text-align: left;
+  }
+  .section-2-text b {
+    position: relative;
+    bottom: 5px;
+  }
+}
+
+@media only screen and (min-width: 820px) {
+  .section-2-main {
+    display: flex;
+    justify-content: space-between;
+    height: 460px;
+  }
+  .section-2-main-text {
+    width: 50%;
+    height: 400px;
+  }
+  .section-2-main-text #welcome {
+    /* width: 615px; */
+    height: 344px;
+    margin: auto;
+  }
+  .section-2-main-image img {
+    width: 295px;
+  }
+  .section-2-main-image {
+    width: 50%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #section-cut {
+    display: none;
+  }
+  #vacancy-hr {
+    margin-top: 15px;
+  }
+}
+
+@media only screen and (min-width: 984px) {
+  .section-2-main-text {
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-bottom: 40px;
+  }
+  .section-2-text {
+    padding-bottom: 49px;
+    width: 820px;
+    margin: auto;
+  }
+  .vacancy-section {
+    height: 253px;
+  }
+  #vacancy-text {
+    margin: 30px 0;
+  }
+}
+
+@media only screen and (min-width: 1182px) {
+  .section-2-main-text #welcome {
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin: auto;
+  }
+  .vacancy-section {
+    width: 1026px;
+    height: 253px;
+  }
+  #vacancy-text {
+    position: relative;
+    right: 390px;
+  }
+}
+
+@media only screen and (min-width: 1333px) {
+  .section-2-main-text #welcome {
+    padding: 40px 90px;
+    margin: auto;
+    height: 317px;
+  }
+  .container {
+    max-width: 1440px;
+    margin: auto;
+  }
+}

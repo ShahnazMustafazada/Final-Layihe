@@ -1,0 +1,361 @@
+
+/* ! ============= MAIN =============== */
+main .about-text-sec {
+  padding: 60px 0;
+  width: 59%;
+  margin: auto;
+}
+/* ! ================ SECTION  1 =================== */
+.about-text-sec p,
+a {
+  color: #2b2b2b;
+  font-size: 1.125rem;
+  line-height: 1.6875rem;
+  font-weight: 400;
+}
+.about-text-sec > p:first-child {
+  margin: 0 0 60px;
+}
+.about-text-sec >p >span {
+  font-weight: 700;
+}
+.about-text-sec > p:last-child {
+  margin: 25px 0 0;
+}
+.about-text-sec h2 {
+  font-size: 35px;
+  line-height: 52px;
+  font-weight: 700;
+  color: #2b2b2b;
+  margin: 60px 0 25px;
+}
+.about-text-sec ul li {
+  list-style: none;
+  margin: 15px 0;
+}
+.about-text-sec ul li a {
+  text-decoration: none;
+}
+.about-text-sec ul li a img {
+  margin-right: 10px;
+}
+.cards {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.card-main {
+  width: 280px;
+  height: 350px;
+  background: #f2f2f2;
+  padding: 30px 0;
+  position: relative;
+  transition: 0.9s;
+  border-radius: 4px;
+}
+.card-main:hover {
+  cursor: pointer;
+
+  -webkit-transform: scale(1.05);
+  -moz-transform: scale(1.05);
+  -ms-transform: scale(1.05);
+  -o-transform: scale(1.05);
+  transform: scale(1.05);
+}
+.card {
+  width: 33.33%;
+  border: 1px solid transparent;
+}
+.card-main > h3 {
+  text-align: center;
+  font-size: 35px;
+  line-height: 52px;
+  font-weight: 700;
+}
+.card-main p {
+  text-align: center;
+}
+.card-main img {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+/* ! ============ SECTION  2 ========================== */
+.section-2 {
+  width: 100%;
+  background-position: center;
+  position: relative;
+}
+.section-2 img {
+  width: 100%;
+  z-index: -1;
+}
+.about-sec-2-texts {
+  width: 100%;
+  z-index: 10;
+}
+.section-2 p {
+  width: 296px;
+  font-size: 18px;
+  line-height: 27px;
+  color: #2b2b2b;
+  font-weight: 400;
+  position: absolute;
+}
+.section-2 p span {
+  font-weight: 700;
+}
+.p1 {
+  top: 8%;
+  left: 20%;
+}
+.p2 {
+  bottom: 25%;
+  left: 22%;
+}
+.p3 {
+  bottom: 8%;
+  left: 50%;
+
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.p4 {
+  bottom: 243px;
+  right: 20%;
+}
+.p5 {
+  top: 67px;
+  right: 20%;
+}
+
+
+@media only screen and (min-width: 1024px) and (max-width: 1440px) {
+  /* nav'daki ul gorunmeyecek */
+  
+  main .about-text-sec {
+    padding: 60px 0;
+  }
+  .about-text-sec p,
+  a {
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+  }
+  .about-text-sec h2 {
+    font-size: 2rem;
+    line-height: 3rem;
+    margin: 50px 0 20px;
+  }
+  .card-main {
+    width: 100%;
+  }
+  .card {
+    width: 32%;
+    border: 1px solid transparent;
+  }
+
+  .section-2 p {
+    width: 250px;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+  .section-2 p span {
+    font-weight: 700;
+  }
+  .p1 {
+    top: 100px;
+    left: 20%;
+  }
+  .p2 {
+    bottom: 25%;
+    left: 22%;
+  }
+  .p3 {
+    width: 270px !important;
+    bottom: 8%;
+    left: 50%;
+
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .p4 {
+    bottom: 243px;
+    right: 20%;
+  }
+  .p5 {
+    top: 67px;
+    right: 20%;
+  }
+
+  
+}
+
+@media only screen and (min-width: 812px) and (max-width: 1024px) {
+  /* tablet */
+  
+  main .about-text-sec {
+    padding: 50px 0;
+  }
+  .about-text-sec p,
+  a {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .about-text-sec h2 {
+    font-size: 1.7rem;
+    line-height: 2rem;
+    margin: 40px 0 20px;
+  }
+  .cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card-main {
+    width: 100%;
+  }
+  .card {
+    width: 50%;
+    border: 1px solid transparent;
+    margin-bottom: 20px;
+  }
+
+  .section-2 p {
+    width: 250px;
+    font-size: 0.9rem;
+    line-height: 1.5rem;
+  }
+  .section-2 p span {
+    font-weight: 700;
+  }
+  .p1 {
+    top: 17%;
+    left: 17%;
+  }
+  .p2 {
+    bottom: 25%;
+    left: 17%;
+  }
+  .p3 {
+    width: 270px !important;
+    bottom: 8%;
+    left: 50%;
+
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .p4 {
+    bottom: 35%;
+    right: 17%;
+  }
+  .p5 {
+    top: 67px;
+    right: 20%;
+  }
+
+  
+}
+
+@media only screen and (max-width: 812px) {
+  /* mobile */
+    
+  main .about-text-sec {
+    padding: 30px 0;
+  }
+  .about-text-sec p,
+  a {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+  .about-text-sec h2 {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    margin: 35px 0 20px;
+  }
+  .cards {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .card-main {
+    width: 100%;
+  }
+  .card {
+    width: 50%;
+    border: 1px solid transparent;
+    margin-bottom: 20px;
+  }
+
+  .section-2 p {
+    width: 190px;
+    font-size: 0.6rem;
+    line-height: 1rem;
+  }
+  .section-2 p span {
+    font-weight: 700;
+  }
+  .p1 {
+    top: 10%;
+    left: 10%;
+  }
+  .p2 {
+    bottom: 30%;
+    left: 10%;
+  }
+  .p3 {
+    width: 220px !important;
+    bottom: 8%;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+  }
+  .p4 {
+    bottom: 30%;
+    right: 10%;
+  }
+  .p5 {
+    top: 10%;
+    right: 10%;
+  }
+
+}
+@media only screen and (max-width: 500px){
+  .about-text-sec{
+    padding: 15px!important;
+  }
+  .card {
+    width: 60%;
+    border: 1px solid transparent;
+    margin-bottom: 20px;
+  }
+  .section-2 p {
+    width: 125px;
+    font-size: 0.5rem;
+    line-height: .9;
+  }
+  .p3 {
+    width: 160px !important;
+  }
+}
